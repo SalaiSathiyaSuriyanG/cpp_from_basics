@@ -1,8 +1,8 @@
 
 /* ==================== LeetCode version =========================
 - Leetcode Problem :  
-- Time Complexity: O(n)
-- Space Complexity: O(1)
+- Time Complexity: O(N*M)
+- Space Complexity: O(M)
 
 class Solution {
 public:
@@ -60,3 +60,4 @@ int main() {
 	cout<<"Longest Common Prefix :"<<sol.longestCommonPrefix(strs);
     return 0;
 }
+
