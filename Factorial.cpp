@@ -1,19 +1,17 @@
 #include<iostream>
-
 using namespace std;
 
+int factorial(int n){
+    if(n<=1){
+        return 1;
+    }
+    return n*factorial(n-1);
+}
 int main()
 {
 	int n;
-	
 	cout<<"Enter an integer: ";
 	cin>>n;
-	
-    int fact=1;
-    for(int i=1;i<=n;i++){
-        fact*=i;
-    }
-    cout<<"The Factorial of "<<n<<" is "<<fact;
-    
+    cout<<"The Factorial of "<<n<<" is "<<factorial(n)<<endl;
 return 0;    
 }
