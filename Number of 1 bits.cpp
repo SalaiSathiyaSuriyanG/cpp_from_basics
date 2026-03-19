@@ -1,7 +1,7 @@
 
 /* ==================== LeetCode version =========================
 
-- Time Complexity: O(n)
+- Time Complexity: O(k) //where k is the number of bits in the integer
 - Space Complexity: O(1)
 
 class Solution {
