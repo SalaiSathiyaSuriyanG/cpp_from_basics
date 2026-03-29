@@ -20,5 +20,5 @@ int main(){
 	for(int i=0;i<n;i++){
 	cin>>nums[i];
 }
-	cout<<containsDuplicate(nums);
+	cout<<"Does the array contain duplicates? (Yes = 1, No = 0) : "<<containsDuplicate(nums);
 }
