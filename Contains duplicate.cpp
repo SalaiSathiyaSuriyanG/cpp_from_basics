@@ -1,6 +1,7 @@
-   #include<bits/stdc++.h>
-   using namespace std;
-   
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution{
     bool containsDuplicate(vector<int>& nums){
         for(int i=0;i<nums.size();i++){
             for(int j=i+1;j<nums.size();j++){
@@ -10,8 +11,10 @@
         }
         return false; // false is 0
     }
+};
 
 int main(){
+	Solution sol;
 	int n;
 	cout<<"Enter the size of the Array: ";
 	cin>>n;
@@ -20,5 +23,5 @@ int main(){
 	for(int i=0;i<n;i++){
 	cin>>nums[i];
 }
-	cout<<"Does the array contain duplicates? (Yes = 1, No = 0) : "<<containsDuplicate(nums);
+	cout<<"Does the array contain duplicates? (Yes = 1, No = 0) : "<<sol.containsDuplicate(nums);
 }
