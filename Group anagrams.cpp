@@ -1,8 +1,8 @@
 
 /* ================================== LeetCode version ======================================
 
-- Time Complexity: O(n)
-- Space Complexity: O(1)
+- Time Complexity: O(n*(k log k)) //Sorting for each word takes O(k log k) and for n times, O(n*(k log k))
+- Space Complexity: O(n*k) //n for map which stores all the words and k for key which stores sorted string
 
 class Solution {
 public:
