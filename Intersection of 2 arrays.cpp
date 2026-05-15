@@ -2,7 +2,7 @@
 /* ================================== LeetCode version ======================================
 
 - Time Complexity: O(n + m) //where n and m are the lengths of nums1 and nums2 respectively
-- Space Complexity: O(n + m) //In the worst case, all the will be unique elements
+- Space Complexity: O(n + m) //In the worst case, all the elements will be unique
 
 class Solution {
 public:
