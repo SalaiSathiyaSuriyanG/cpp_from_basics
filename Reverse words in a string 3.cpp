@@ -2,7 +2,7 @@
 /* ================================== LeetCode version ======================================
 
 - Time Complexity: O(n) 
-- Space Complexity: O(n) // 
+- Space Complexity: O(n) //stringstream require extra memory
 
 class Solution {
 public:
