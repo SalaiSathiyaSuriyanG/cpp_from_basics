@@ -17,25 +17,25 @@
 /
 class Solution {
 private:
-    void dfs(TreeNode* node, vector<int>& sum){
+    void dfs(TreeNode* node, vector<int>& list){
         if(!node) return;
 
         if(!node->left && !node->right){
-            sum.push_back(node->val);
+            list.push_back(node->val);
         }
-        dfs(node->left, sum);
-        dfs(node->right, sum);
+        dfs(node->left, list);
+        dfs(node->right, list);
     }
 
 public:
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        vector<int> sum1;
-        vector<int> sum2;
+        vector<int> list1;
+        vector<int> list2;
 
-        dfs(root1, sum1);
-        dfs(root2, sum2);
+        dfs(root1, list1);
+        dfs(root2, list2);
 
-        return sum1 == sum2;
+        return list1 == list2;
     }
 };
 ========================================================================================== */
@@ -58,25 +58,25 @@ struct TreeNode {
 
 class Solution {
 private:
-    void dfs(TreeNode* node, vector<int>& sum){
+    void dfs(TreeNode* node, vector<int>& list){
         if(!node) return;
 
         if(!node->left && !node->right){
-            sum.push_back(node->val);
+            list.push_back(node->val);
         }
-        dfs(node->left, sum);
-        dfs(node->right, sum);
+        dfs(node->left, list);
+        dfs(node->right, list);
     }
 
 public:
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        vector<int> sum1;
-        vector<int> sum2;
+        vector<int> list1;
+        vector<int> list2;
 
-        dfs(root1, sum1);
-        dfs(root2, sum2);
+        dfs(root1, list1);
+        dfs(root2, list2);
 
-        return sum1 == sum2;
+        return list1 == list2;
     }
 };
 
