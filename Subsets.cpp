@@ -1,8 +1,9 @@
 
 /* ================================== LeetCode Version ======================================
 
-- Time Complexity: O(n*(2^n)) 
-- Space Complexity: O(n) 
+- Time Complexity: O(n * 2^n) //Because for each element,
+                              //we have two choices: either to include it in the subset or not. 
+- Space Complexity: O(n * 2^n) //Because we are storing all the subsets in the result vector.
 
 class Solution {
 private:
