@@ -13,7 +13,7 @@ public:
         }
 
         for(int i = 0; i < words.size() - 1; i++){
-            // By using constant reference, we can reduce the space
+            // By using constant reference, we can reduce the space complexity
             // by avoiding copying the strings entirely.
             // Now it points directly to the strings inside words.
             const string& s1 = words[i];
@@ -24,12 +24,14 @@ public:
             
             while(i1 < s1.size() && i2 < s2.size()){
                 if(s1[i1] != s2[i2]){
-                    // Check the custom order at the first mismatch.
+                    // If s1's letter comes after s2's letter in alien order,
+                    // it means the words are sorted incorrectly.
                     if(mp[s1[i1]] > mp[s2[i2]]){
                         return false;
                     }
 
-                    // If the right order is found skip the remaining. We don't need to check further.
+                    // If we get here, it means s1's letter comes before s2's letter
+                    // and it's sorted correctly. So we don't need to check further.
                     found_mismatch = true;
                     break; 
                 }
@@ -63,7 +65,7 @@ public:
         }
 
         for(int i = 0; i < words.size() - 1; i++){
-            // By using constant reference, we can reduce the space
+            // By using constant reference, we can reduce the space complexity
             // by avoiding copying the strings entirely.
             // Now it points directly to the strings inside words.
             const string& s1 = words[i];
@@ -74,12 +76,14 @@ public:
             
             while(i1 < s1.size() && i2 < s2.size()){
                 if(s1[i1] != s2[i2]){
-                    // Check the custom order at the first mismatch.
+                    // If s1's letter comes after s2's letter in alien order,
+                    // it means the words are sorted incorrectly.
                     if(mp[s1[i1]] > mp[s2[i2]]){
                         return false;
                     }
 
-                    // If the right order is found skip the remaining. We don't need to check further.
+                    // If we get here, it means s1's letter comes before s2's letter
+                    // and it's sorted correctly. So we don't need to check further.
                     found_mismatch = true;
                     break; 
                 }
